@@ -3,7 +3,7 @@
 import os
 import tempfile
 
-from config import set_environment
+#from config import set_environment
 from langchain.chains.base import Chain
 from langchain.chains.conversational_retrieval.base import ConversationalRetrievalChain
 from langchain.chains.flare.base import FlareChain
@@ -19,7 +19,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 from chapter5.chat_with_retrieval.utils import LOGGER, MEMORY, load_document
 
-set_environment()
+#set_environment()
 
 LOGGER.info("setup LLM")
 # Setup LLM and QA chain; set temperature low to keep hallucinations in check
