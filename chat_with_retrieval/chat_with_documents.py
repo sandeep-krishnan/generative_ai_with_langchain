@@ -19,11 +19,11 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import DocArrayInMemorySearch
 
 from chat_with_retrieval.utils import MEMORY, load_document
-from config import set_environment
+#from config import set_environment
 
 logging.basicConfig(encoding="utf-8", level=logging.INFO)
 LOGGER = logging.getLogger()
-set_environment()
+#set_environment()
 
 # Setup LLM and QA chain; set temperature low to keep hallucinations in check
 LLM = ChatOpenAI(
